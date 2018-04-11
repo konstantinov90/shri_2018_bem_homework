@@ -2,7 +2,9 @@ import React, { Fragment } from 'react';
 import { decl, Bem } from 'bem-react-core';
 
 import Card from 'b:Card';
+// import 'b:Card m:size=small'
 import 'e:Logo';
+// import 'e:Wrapper';
 
 export default decl({
     block: 'Zen',
@@ -18,9 +20,11 @@ export default decl({
         return (
             <Fragment>
                 <Bem elem="Logo"></Bem>
-                { this.state.data.length && this.state.data.map((card) => {
-                    return <Card { ...card }/>
-                }) }
+                <Bem elem="Wrapper">
+                    { this.state.data.length && this.state.data.map((card, idx) => {
+                        return <Card key={ idx } { ...card }/>
+                    }) }
+                </Bem>
             </Fragment>
         );
     }

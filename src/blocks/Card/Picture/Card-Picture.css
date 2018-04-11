@@ -1,0 +1,10 @@
+.Card-Picture {
+    overflow: hidden;
+    position: relative;
+    z-index: 1;
+    width: 100%;
+}
+
+.Card-Picture img {
+    width: 100%;
+}
