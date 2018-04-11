@@ -4,7 +4,7 @@ import { decl, Bem } from 'bem-react-core';
 import Card from 'b:Card';
 // import 'b:Card m:size=small'
 import 'e:Logo';
-// import 'e:Wrapper';
+import 'e:Wrapper';
 
 export default decl({
     block: 'Zen',

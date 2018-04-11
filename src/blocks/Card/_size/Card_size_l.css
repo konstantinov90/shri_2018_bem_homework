@@ -5,7 +5,8 @@
         "picture picture header"
         "picture picture description";
     grid-column-gap: 16px;
-    max-width: 744px;
+    /* max-width: 744px; */
+    height: 243px;
 }
 
 .Card_size_l .Card-Header {

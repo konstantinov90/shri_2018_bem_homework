@@ -1,7 +1,18 @@
 .Zen-Wrapper {
     display: grid;
-    max-width: 704px;
     grid-template-columns: repeat(6, 1fr);
     grid-gap: 29px 16px;
     grid-auto-flow: dense;
+}
+
+.Card_size_s {
+    grid-column: span 2;
+}
+
+.Card_size_m {
+    grid-column: span 3;
+}
+
+.Card_size_l {
+    grid-column: span 6;
 }
