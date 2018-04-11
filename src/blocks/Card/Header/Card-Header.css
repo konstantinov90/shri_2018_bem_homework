@@ -1,0 +1,17 @@
+.Card-Header {
+    display: -webkit-box;
+    -webkit-line-clamp: 3;
+    -webkit-box-orient: vertical;
+    max-height: 3.2em;
+    overflow: hidden;
+}
+
+.Card-Header h3 {
+    line-height: 1.1rem;
+    margin: 0;
+    font-size: 17px;
+    overflow: hidden;
+    display: block;
+    position: relative;
+
+}

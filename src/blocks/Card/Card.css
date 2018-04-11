@@ -1,0 +1,11 @@
+.Card {
+    display: grid;
+    grid-auto-flow: row dense;
+    grid-gap: 8px;
+    overflow: hidden;
+}
+
+.Card .IconHeart,
+.Card .IconNavMore {
+    z-index: 1000;
+}

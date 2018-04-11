@@ -1,0 +1,7 @@
+.Zen-Wrapper {
+    display: grid;
+    max-width: 704px;
+    grid-template-columns: repeat(6, 1fr);
+    grid-gap: 29px 16px;
+    grid-auto-flow: dense;
+}
