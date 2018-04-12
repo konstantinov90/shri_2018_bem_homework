@@ -1,0 +1,12 @@
+.Card-Description {
+    position: relative;
+    z-index: 1;
+}
+
+.Card-Description p {
+    overflow: hidden;
+    max-height: 100%;
+    position: absolute;
+    left: 0;
+    top: 0;
+}

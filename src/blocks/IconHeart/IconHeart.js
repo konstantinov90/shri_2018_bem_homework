@@ -1,5 +1,5 @@
 import React from 'react';
-import { decl, Bem } from 'bem-react-core';
+import { decl } from 'bem-react-core';
 
 import Icon from 'b:Icon';
 

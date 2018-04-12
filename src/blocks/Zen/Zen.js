@@ -21,7 +21,7 @@ export default decl({
             <Fragment>
                 <Bem elem="Logo"></Bem>
                 <Bem elem="Wrapper">
-                    { this.state.data.length && this.state.data.map((card, idx) => {
+                    { this.state.data.map((card, idx) => {
                         return <Card key={ idx } { ...card }/>
                     }) }
                 </Bem>

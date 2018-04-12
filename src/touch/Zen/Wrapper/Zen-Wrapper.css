@@ -1,0 +1,32 @@
+.Zen-Wrapper {
+    grid-template-columns: 1fr;
+}
+
+.Card_size_s,
+.Card_size_m,
+.Card_size_l {
+    grid-column: span 1;
+    height: unset;
+    max-height: unset;
+    min-height: unset;
+    max-width: unset;
+}
+
+.Card_size_s {
+    height: unset;
+    max-height: unset;
+    min-height: unset;
+    max-width: unset;
+}
+
+.Card_size_s .Card-Picture {
+    height: unset;
+}
+
+.Card_size_m .Card-Picture picture,
+.Card_size_l .Card-Picture picture,
+.Card_size_s .Card-Picture picture {
+    position: unset;
+}
+
+

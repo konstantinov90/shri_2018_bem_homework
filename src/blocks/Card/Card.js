@@ -28,7 +28,7 @@ export default decl({
                     <h3 style={{ color: this.props.titleColor }}>{ this.props.title }</h3>
                 </Bem>
                 { this.props.image &&
-                    <Picture image={ this.props.image } clip={ this.props.size !== 'l' }></Picture>
+                    <Picture image={ this.props.image } cardSize={ this.props.size }></Picture>
                 }
                 { this.props.description &&
                     <Bem elem="Description">

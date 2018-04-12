@@ -1,16 +1,6 @@
-.Card-Description {
-    position: relative;
-    z-index: 1;
-}
-
 .Card-Description p {
     line-height: 20px;
     font-size: 14px;
     margin: 0;
     padding: 0;
-    overflow: hidden;
-    max-height: 100%;
-    position: absolute;
-    left: 0;
-    top: 0;
 }

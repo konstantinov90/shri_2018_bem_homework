@@ -1,16 +1,9 @@
-import React, { Fragment } from 'react';
-import { decl, Bem } from 'bem-react-core';
-
-import 'm:clip'
+import React from 'react';
+import { decl } from 'bem-react-core';
 
 export default decl({
     block: 'Card',
     elem: 'Picture',
-    mods() {
-        return {
-            clip: this.props.clip,
-        };
-    },
     content() {
         const [ img_name, ext ] = this.props.image.split('.');
         return (

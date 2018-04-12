@@ -1,0 +1,13 @@
+.Card_size_s .Card-Description:after{
+    position: absolute;
+    content: "";
+    left: 0;
+    top: 50%;
+    width: 100%;
+    height: 50%;
+    background-image: linear-gradient(to bottom, transparent, white);
+}
+
+.Card_size_s .Card-Description {
+    margin: 0 30px 25px 0;
+}

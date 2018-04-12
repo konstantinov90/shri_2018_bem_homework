@@ -1,0 +1,9 @@
+.Card_size_m {
+    height: 303px;
+    max-width: 368px;
+}
+
+.Card_size_m .Card-Description {
+    margin-right: 30px;
+    max-height: calc(3rem + 16px);
+}

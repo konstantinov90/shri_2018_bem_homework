@@ -1,0 +1,24 @@
+.Card_size_l {
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: auto 1fr;
+    grid-template-areas: 
+        "picture picture header"
+        "picture picture description";
+    grid-column-gap: 16px;
+    /* max-width: 744px; */
+    height: 243px;
+}
+    
+.Card_size_l .Card-Description {
+    margin-bottom: 20px;
+}
+
+.Card_size_l .Card-Description:after {
+    position: absolute;
+    content: "";
+    left: 0;
+    top: 50%;
+    width: 100%;
+    height: 50%;
+    background-image: linear-gradient(to bottom, transparent, white);
+}
