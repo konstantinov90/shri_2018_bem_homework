@@ -5,7 +5,7 @@ export default decl({
     block: 'Icon',
     content() {
         return (
-            <svg viewBox={ this.props.viewBox }>
+            <svg { ...this.props }>
                 { this.props.children }
             </svg>
         );

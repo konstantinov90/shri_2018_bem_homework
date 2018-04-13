@@ -10,10 +10,23 @@ app.use((req, rex, next) => {
 });
 
 app.get('/', (req, res) => {
-    res.send(JSON.stringify(req.ua, true, 4));
+    // res.send(JSON.stringify(req.ua, true, 4));
+    const { isDesktop, isTablet, isMobile } = req;
+    if (isMobile) {
+        res.sendFile(__dirname + '/build/touch.html');
+    } else if (isTablet) {
+        res.sendFile(__dirname + '/build/tablet.html');
+    }
+    res.sendFile(__dirname + '/build/desktop.html');
 });
 
-const PORT = 9000;
+app.use(express.static('build'))
+
+const PORT = parseInt(process.env.PORT, 10);
+
+if (!PORT) {
+    throw new Error('PORT env variable must be set!');
+}
 
 app.listen(PORT, () => {
     console.log(`app listening at ${PORT}`);

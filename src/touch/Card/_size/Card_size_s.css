@@ -1,3 +1,7 @@
 .Card_size_s .Card-Description {
-    margin: 0 0 35px 0;
+    margin: 0 0 55px 0;
+}
+
+.Card_size_s_text .IconNavMore {
+    margin: 5px 20%;
 }

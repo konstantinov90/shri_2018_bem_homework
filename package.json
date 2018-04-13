@@ -18,11 +18,12 @@
     "react-scripts": "1.0.17"
   },
   "scripts": {
-    "dev": "node server.js",
+    "serv": "node server.js",
     "start": "react-app-rewired start",
     "build": "react-app-rewired build",
     "test": "jest",
-    "eject": "react-scripts eject"
+    "eject": "react-scripts eject",
+    "deploy": "npm run build && npm run serv"
   },
   "devDependencies": {
     "babel-plugin-bem-import": "1.5.3",

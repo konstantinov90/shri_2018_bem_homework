@@ -1,0 +1,12 @@
+.Zen-Wrapper {
+    grid-template-columns: repeat(4, 1fr);
+}
+
+.Card_size_s {
+    grid-column: span 2;
+}
+
+.Card_size_m,
+.Card_size_l {
+    grid-column: span 4;
+}

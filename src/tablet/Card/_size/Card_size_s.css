@@ -1,0 +1,7 @@
+.Card_size_s:not(.Card_size_s_text) {
+    align-items: flex-end;
+}
+
+.Card_size_s .Card-Description {
+    margin: 0 0 35px 0;
+}

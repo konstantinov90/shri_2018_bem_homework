@@ -13,6 +13,22 @@
     margin-bottom: 20px;
 }
 
+.Card_size_l .IconHeart,
+.Card_size_l .IconNavMore {
+    grid-area: description;
+}
+
+.Card_size_l .IconHeart {
+    align-self: end;
+    justify-self: end;
+    margin: 0 5px;
+}
+
+.Card_size_l .IconNavMore {
+    align-self: end;
+    justify-self: start;
+}
+
 .Card_size_l .Card-Description:after {
     position: absolute;
     content: "";
@@ -22,3 +38,4 @@
     height: 50%;
     background-image: linear-gradient(to bottom, transparent, white);
 }
+

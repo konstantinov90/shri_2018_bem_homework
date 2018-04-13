@@ -1,11 +1,9 @@
 .Card_size_m {
-    grid-template-rows: minmax(min-content, 0.5rem) auto calc(3.1rem + 16px);
+    grid-template-rows: minmax(min-content, 0.5rem) auto auto;
     grid-template-areas:
         "header"
         "picture"
         "description";
-    /* height: 303px;
-    max-width: 368px; */
 }
 
 .Card_size_m .Card-Description {
@@ -19,16 +17,15 @@
 
 .Card_size_m .IconHeart,
 .Card_size_m .IconNavMore {
-    grid-area: description;
+    grid-area: picture;
     justify-self: end;
+    margin: 5px;
 }
 
 .Card_size_m .IconHeart {
     align-self: end;
-    margin: 5px;
 }
 
 .Card_size_m .IconNavMore {
     align-self: start;
-    margin: 0 5px;
 }

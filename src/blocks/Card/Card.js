@@ -16,9 +16,13 @@ import 'm:size=l';
 
 export default decl({
     block: 'Card',
+    willInit() {
+        this.isSmallAndTextOnly = this.props.size === 's' && !this.props.image;
+    },
     mods() {
         return {
             size: this.props.size,
+            'size_s_text': this.isSmallAndTextOnly,
         };
     },
     content() {
@@ -36,7 +40,7 @@ export default decl({
                     </Bem>
                 }
                 <Bem elem="ChannelName" tag="h4"
-                    mods={{ black: this.props.size === 's' && !this.props.image }}>
+                    mods={{ black: this.isSmallAndTextOnly }}>
                     { this.props.channelName }
                 </Bem>
                 <IconHeart/>

@@ -1,9 +1,0 @@
-.Card_size_l {
-    grid-column: span 4;
-    grid-template-columns: 1fr;
-    grid-template-rows: auto 1fr auto;
-    grid-template-areas: 
-        "header"
-        "picture"
-        "description";
-}

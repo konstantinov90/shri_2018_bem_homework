@@ -1,10 +1,8 @@
 .Card_size_s {
-    grid-template-rows: min-content 1fr;
+    grid-template-rows: auto 1fr;
     grid-template-areas:
         "header"
         "content";
-    height: 225px;
-    max-width: 225px;
 }
 
 .Card_size_s .Card-Picture,
@@ -27,4 +25,9 @@
 
 .Card_size_s .IconNavMore {
     align-self: start;
+}
+
+.Card_size_s_text .IconNavMore {
+    align-self: end;
+    margin: 5px 50px;
 }
