@@ -11,7 +11,7 @@ app.use((req, rex, next) => {
 
 app.get('/', (req, res) => {
     // res.send(JSON.stringify(req.ua, true, 4));
-    const { isTablet, isMobile } = req;
+    const { isTablet, isMobile } = req.ua;
     if (isMobile) {
         return res.sendFile(__dirname + '/build/touch.html');
     } else if (isTablet) {
