@@ -1,9 +1,3 @@
 .IconHeart svg:hover {
     fill: #e93c4e;
-    cursor: pointer;
-}
-
-.IconHeart svg:active {
-    fill: blue;
-    cursor: pointer;
 }
